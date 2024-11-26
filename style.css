@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "urbanist";
+}
+
+.logo{
+    height: 85px;
+    width: 235px;
+}
+
+li, a, button {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #f27305;
+    border-style: dotted;
+    border-radius: 50px;
+}
+
+body{
+    background-color: #f5cae8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: #a5bb1a;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: pink;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background-color: #a5bb1a;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: #f27305;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+}
