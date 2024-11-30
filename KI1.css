@@ -7,6 +7,12 @@
     font-family: "urbanist";
 }
 
+.logo{
+    height: 35px;
+    width: 235px;
+    align-items: center;
+}
+
 li, a, button {
     font-weight: bold;
     font-size: 16px;
@@ -86,10 +92,10 @@ nav{
     align-items: center;
 }
 
-.isi, .kerjasama{
-    margin-top: 5px;
-    margin: 15px;
+.kerjasama, .container{
+    margin: 10px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 p{
@@ -97,42 +103,48 @@ p{
     margin-bottom: 1rem;
 }
 
-.gallery{
+.container {
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    min-height: 500px; /* Increased height to prevent text cropping */
+    transition: 400ms;
 }
 
-.gallery img{
-    width: 550px;
-    height: 350px;
-    border: 1px solid black;
-    border-radius: 13px;
+.container img {
+    width: 100%; /* Fills the container width */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image doesn't distort but fits */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container div {
+    height: auto; /* Adjusts height dynamically to fit content */
+    width: 500px; /* Uniform width for all containers */
+    background-color: #ffffff;
     margin: 10px;
-    transition: 400ms;
-}
-
-.gallery img:hover{
-    filter: grayscale(2);
-    transform: scale(1.03);
-}
-
-.fototipe{
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.fototipe img{
-    width: 400px;
-    height: 400px;
-    margin: 5px;
-    transition: 400ms;
+.container p {
+    margin-bottom: 20px;
+    line-height: 1.5; /* Increases line spacing for readability */
 }
 
-.gallery img:hover{
-    filter: blur(2);
+.container div:hover{
+    filter: grayscale(2);
     transform: scale(1.03);
 }
